@@ -2,8 +2,7 @@ const express = require("express");
 const app = express();
 const mongodb = require("mongodb");
 const mongoclient = mongodb.MongoClient;
-const URL = "mongodb+srv://admin:admin123@cluster0.zfkqxf5.mongodb.net/?retryWrites=true&w=majority";
-// "mongodb://localhost:27017/";
+const URL = process.env.DB;
 
 
 app.use(express.json());
